@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'componentCommDemo';
+  title = 'Send Data from parent to child Component';
+  data=10;
+
+  updateChild(){
+    this.data=Math.floor(Math.random()*10);
+  }
 }
